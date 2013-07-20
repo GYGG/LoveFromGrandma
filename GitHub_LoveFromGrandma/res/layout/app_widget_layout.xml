@@ -2,6 +2,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
+    android:background="@drawable/blue_bg_400"
     >
 	<ImageView
 	    android:id="@+id/iv_app_widget"
@@ -9,16 +10,16 @@
     	android:layout_height="fill_parent"
 		android:contentDescription="显示离下次去外婆家还有多少天的图片提示"
 		android:src="@drawable/ic_launcher"
-		android:visibility="gone"
 		/>
 
 	<TextView
 	    android:id="@+id/tv_next_checkdate"
 	    android:layout_width="fill_parent"
 	    android:layout_height="fill_parent"
-	    android:textSize="36sp"
+	    android:textSize="60sp"
 	    android:text="0"
 	    android:textColor="#FFFF11FF"
-	    android:contentDescription="显示离下次去外婆家还有多少天的文字提示" />
+	    android:contentDescription="显示离下次去外婆家还有多少天的文字提示"
+	    android:visibility="gone" />
 
 </LinearLayout>

@@ -17,6 +17,23 @@ import com.gyliu.core.setting.Setting;
 public class MyWidgetProvider extends AppWidgetProvider {
 	private static final String TAG = MyWidgetProvider.class.getSimpleName();
 	
+	private static int[] greenResId = {
+			R.drawable.green_today_400,
+			R.drawable.green_1day_400,
+			R.drawable.green_2days_400,
+			R.drawable.green_3days_400,
+	};
+	
+	private static int greenBgResId = R.drawable.green_bg_400;
+	
+	private static int[] blueResId = {
+			R.drawable.blue_today_400,
+			R.drawable.blue_1day400,
+			R.drawable.blue_2days400,
+			R.drawable.blue_3days400,
+	};
+	private static int blueBgResId = R.drawable.blue_bg_400;
+	
 	@Override
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager,
 			int[] appWidgetIds) {
@@ -45,7 +62,8 @@ public class MyWidgetProvider extends AppWidgetProvider {
 		int days = getDays(context);
 		
 		
-		views.setTextViewText(R.id.tv_next_checkdate, String.valueOf(days));
+		views.setImageViewResource(R.id.iv_app_widget, greenResId[days % 4]);
+		
 		
 		Intent intent = new Intent(context, SettingActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
