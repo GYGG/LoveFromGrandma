@@ -43,7 +43,7 @@ public class MyWidgetProvider extends AppWidgetProvider {
 	 * 获取两个日期之间的间隔天数 
 	 * @return 
 	 */  
-	public static int getGapCount(Date startDate, Date endDate) {  
+	private static int getGapCount(Date startDate, Date endDate) {  
 	       Calendar fromCalendar = Calendar.getInstance();    
 	       fromCalendar.setTime(startDate);    
 	       fromCalendar.set(Calendar.HOUR_OF_DAY, 0);    
