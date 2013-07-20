@@ -14,8 +14,14 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int iv_app_widget=0x7f080000;
-        public static final int menu_settings=0x7f080001;
+        public static final int iv_app_widget=0x7f080005;
+        public static final int menu_settings=0x7f080007;
+        public static final int rb_one_day_before=0x7f080003;
+        public static final int rb_three_days_before=0x7f080001;
+        public static final int rb_today=0x7f080004;
+        public static final int rb_two_days_before=0x7f080002;
+        public static final int rg_radios=0x7f080000;
+        public static final int tv_next_checkdate=0x7f080006;
     }
     public static final class layout {
         public static final int activity_setting=0x7f030000;

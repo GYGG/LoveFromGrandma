@@ -11,4 +11,30 @@
         android:layout_centerVertical="true"
         android:text="@string/hello_world" />
 
+	<RadioGroup 
+	    android:id="@+id/rg_radios"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	    <RadioButton android:id="@+id/rb_three_days_before"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="三天前"
+	        android:onClick="onRadioButtonClicked"/>
+	    <RadioButton android:id="@+id/rb_two_days_before"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="两天前"
+	        android:onClick="onRadioButtonClicked"/>
+	    <RadioButton android:id="@+id/rb_one_day_before"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="一天前"
+	        android:onClick="onRadioButtonClicked"/>
+	    <RadioButton android:id="@+id/rb_today"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="今天"
+	        android:onClick="onRadioButtonClicked"/>
+	</RadioGroup>
 </RelativeLayout>

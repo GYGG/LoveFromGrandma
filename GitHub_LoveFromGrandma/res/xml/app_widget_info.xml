@@ -8,3 +8,5 @@
     android:widgetCategory="home_screen|keyguard"
     android:initialKeyguardLayout="@layout/app_widget_layout">
 </appwidget-provider>
+
+<!-- android:configure="com.github.kindleliu.lovefromgrandma.SettingActivity" -->
